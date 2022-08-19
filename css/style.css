@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ----------- Header start ----------- */
+
+header {
+  font-family: "Roboto", sans-serif;
+  padding: 2% 10%;
+  background-color: #7030cc;
+  color: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 8%;
+}
+
+nav .logo img {
+  height: 30px;
+}
+
+nav .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .list-item {
+  list-style: none;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+:hover.list-item {
+  color: #1bbcef;
+  border-bottom: 1px solid #ffb6c1;
+}
+
+.nav-btn {
+  font-family: "Roboto", sans-serif;
+  background-color: #1bbcef;
+  padding: 10px 30px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  height: 32px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-left {
+  margin-top: 100px;
+  width: 30%;
+}
+
+.hero-left h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.hero-left p {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.hero-right img {
+  height: 500px;
+}
+
+/* ----------- Header end ----------- */
+
+/* ----------- Features section start ----------- */
+
+.features-section {
+  padding: 6% 10% 1% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feature-left img {
+  height: 600px;
+}
+
+.feature-right {
+  margin-top: 50px;
+  width: 30%;
+}
+
+.feature-right h2 {
+  font-size: 30px;
+}
+
+.feature-cards {
+  padding: 5%;
+  margin-top: 60px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.feature-card img {
+  margin-right: 10px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.feature-card div h3 {
+  font-size: 24px;
+}
+
+.feature-card div p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* ----------- Features section end ----------- */
+
+/* ----------- Services section start ----------- */
+
+.services-section {
+  padding: 1% 10%;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 30px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+
+.service-card {
+  margin: 0 10px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px #d3d3d3;
+  cursor: pointer;
+}
+
+.service-card .card-header {
+  height: 200px;
+  padding: 50px;
+}
+
+.service-card .card-header span {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+}
+
+#service-card1 {
+  background-color: #faeaeb;
+}
+#service-card2 {
+  background-color: #fbf0ee;
+}
+#service-card3 {
+  background-color: #e9f4f6;
+}
+#service-card4 {
+  background-color: #f2e7f5;
+}
+
+.service-card .card-header img {
+  margin-top: 28px;
+  height: 60px;
+}
+
+.service-card .card-body {
+  padding: 10px 50px;
+}
+
+.service-card .card-body.active {
+  background-color: #6429b7;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.service-card .card-body h3 {
+  font-size: 24px;
+}
+
+.service-card .card-body p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ----------- Services section end ----------- */
+
+/* ---------- Media Queries ----------  */
+@media screen and (max-width: 1199px) {
+  header {
+    padding: 2% 6%;
+  }
+  nav {
+    margin-right: 40px;
+  }
+  nav .list-item {
+    margin-right: 40px;
+  }
+  .features-section {
+    padding: 4% 6% 1% 6%;
+  }
+  .feature-left img {
+    margin-top: 60px;
+    height: 500px;
+  }
+  .feature-right {
+    width: 40%;
+  }
+  .services-section {
+    padding: 1% 2%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    padding: 2% 4%;
+  }
+  nav {
+    margin-right: 0;
+  }
+  nav .list-item {
+    margin-right: 20px;
+  }
+  .hero-left {
+    margin-top: 60px;
+    width: 40%;
+  }
+  .hero-left h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+  }
+  .hero-right img {
+    height: 400px;
+  }
+  .features-section {
+    padding: 3% 4% 1% 4%;
+  }
+  .feature-left img {
+    margin-top: 100px;
+    height: 400px;
+  }
+  .feature-right {
+    width: 50%;
+  }
+  .feature-card div h3 {
+    font-size: 22px;
+  }
+  .feature-cards {
+    padding: 3%;
+    margin-top: 30px;
+  }
+  .services-section {
+    padding: 1% 10%;
+  }
+  .service-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-card {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    border-radius: 30px 30px 0 0;
+  }
+  nav .list {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .hero-left h1 {
+    line-height: 1.2;
+  }
+  .hero-left p {
+    margin-top: 20px;
+  }
+  .hero-right img {
+    position: absolute;
+    right: 0;
+    height: 320px;
+  }
+  .features-section {
+    flex-direction: column;
+    padding: 3% 6% 1% 6%;
+  }
+  .feature-left {
+    width: 100%;
+  }
+  .feature-left img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .feature-right {
+    width: 100%;
+  }
+  .feature-card {
+    margin-bottom: 30px;
+  }
+  .services-section {
+    padding: 1% 6%;
+  }
+  .service-card .card-body.active h3 {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    border-radius: 15px 15px 0 0;
+  }
+  .hero-left {
+    margin-top: 90%;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .hero-right img {
+    width: 95%;
+  }
+  .feature-right {
+    margin-top: 10px;
+  }
+  .feature-card div p {
+    margin-top: 10px;
+  }
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
